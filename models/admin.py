@@ -54,7 +54,7 @@ class Users(Base):
     last_ip = Column('last_ip', String(20), default='')
     last_login = Column('last_login', DateTime(), default=datetime.now, onupdate=datetime.now)
     ctime = Column('ctime', DateTime(), default=datetime.now)
-
+ 
 
 class Roles(Base):
     __tablename__ = 'mg_roles'
